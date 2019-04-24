@@ -25,7 +25,7 @@ TwitterBot = API(Auth)
 outfile = open('log.txt', 'a')
 i = 0
 while i < len(Facts):
-        TwitterBot.update_status(Facts[i]+' '+Hashtags[randint(0,len(Hashtags)-1)]) # Tweet a fact as well as a random $
+        TwitterBot.update_status(Facts[i]+' '+Hashtags[randint(0,len(Hashtags)-1)]) 
         outfile.write(str(i)+': '+Facts[i]+'\n') # Keep a log of tweeted facts in case server shuts off
         outfile.flush()
         i += 1
