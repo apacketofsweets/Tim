@@ -2,7 +2,7 @@ from random  import randint
 from time    import sleep
 from tweepy  import OAuthHandler, API
 
-infile = open('NextTweet.txt', 'r')
+infile = open('nexttweet.txt', 'r')
 Facts = []
 for line in infile:
     Facts.append(line.strip('\n'))
@@ -22,11 +22,10 @@ Auth = OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 Auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 TwitterBot = API(Auth)
 
-outfile = open('Log.txt', 'a')
+outfile = open('log.txt', 'a')
 i = 0
 while i < len(Facts):
         TwitterBot.update_status(Facts[i]+' '+Hashtags[randint(0,len(Hashtags)-1)]) # Tweet a fact as well as a random $
         outfile.write(str(i)+': '+Facts[i]+'\n') # Keep a log of tweeted facts in case server shuts off
         outfile.flush()
-#       sleep(randint(3000, 3600)*5) # Tweet every 4-5 hours to prevent bot recognition
         i += 1
