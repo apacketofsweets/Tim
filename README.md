@@ -16,4 +16,4 @@ Twitter API tokens and keys
 * Add the path to that directory into the _WORKINGDIR=_ variable in _main.py_
 * Add Twitter access tokens and consumer keys/secrets into the relevant fields within _timbot.py_
 * Add lines into _tweetlist.txt_ for Tim to post at 30 minute intervals
-* Run _main.sh_ to execute Tim. To keep the session open for long periods of time, use [Screen](https://linux.die.net/man/1/screen)
+* Run _main.sh_ to execute Tim. To keep the session open, it's highly recommended you install and use [Screen](https://linux.die.net/man/1/screen) so you don't have to keep your Terminal open.
