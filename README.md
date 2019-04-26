@@ -6,14 +6,14 @@ Tim is a simple Twitter bot written in Python and Bash. It reads from a text fil
 Twitter will not allow a message to be posted more than once unless it's slightly different to what's been posted before, so each message will be posted with the day's date at the start of the tweet, that way Tim will be able to cycle through every message in that file time and time again.
 
 ### Requirements
-Bash or bash-compatible shell
-Python 2+
-Twitter API tokens and keys
+* Bash or bash-compatible shell
+* Python 2+
+* Twitter API tokens and keys
 
 ### Setup
 
 * Add all files (main.sh, timbot.py & tweetlist.txt) into its own directory
 * Add the path to that directory into the _WORKINGDIR=_ variable in _main.py_
-* Add Twitter access tokens and consumer keys/secrets into the relevant fields within _timbot.py_
+* Add Twitter access tokens and consumer keys/secrets into the relevant fields within _timbot.py_ [Guide](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html)
 * Add lines into _tweetlist.txt_ for Tim to post at 30 minute intervals
 * Run _main.sh_ to execute Tim. To keep the session open, it's highly recommended you install and use [Screen](https://linux.die.net/man/1/screen) so you don't have to keep your Terminal open.
