@@ -6,5 +6,5 @@ Tim is a simple Twitter bot written in Python and Bash. It reads from a text fil
 Twitter will not allow a message to be posted more than once unless it's slightly different to what's been posted before, so each message will be posted with the day's date at the start of the tweet, that way Tim will be able to cycle through every message in that file time and time again.
 
 ## Wiki
-[Requirements](https://github.com/apacketofsweets/Tim/wiki/Requirements)
-[Setup](https://github.com/apacketofsweets/Tim/wiki/Setup)
+* [Requirements](https://github.com/apacketofsweets/Tim/wiki/Requirements)
+* [Setup](https://github.com/apacketofsweets/Tim/wiki/Setup)
