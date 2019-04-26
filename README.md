@@ -8,6 +8,7 @@ Twitter will not allow a message to be posted more than once unless it's slightl
 ### Requirements
 * Bash or bash-compatible shell
 * Python 2+
+* Tweepy (To install: pip install tweepy)
 * Twitter API tokens and keys
 
 ### Setup
